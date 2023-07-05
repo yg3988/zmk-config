@@ -109,7 +109,6 @@
 	fuelgauge:max17048@36 {
 		compatible = "maxim,max17048";
 		label = "BATTERY";
-		status = "ok";
 		reg = <0x36>;
 	};
 };
