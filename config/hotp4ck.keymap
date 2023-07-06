@@ -10,54 +10,55 @@
 #include <dt-bindings/zmk/outputs.h>
 // I am using Win + Arrows for tiling, LG(code) hoewever caused some glitches with sending both LGUI + arrow and then LGUI separately.
 // This leadis to unwanted opening of the start menu. These macros work around this issue.
-/ {
-    macros {
-        lgleft: lgleft {
-			label = "lgleft";
-            compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-				= <&macro_press &kp LWIN>
-				, <&macro_tap &kp LEFT>
-				, <&macro_release &kp LWIN>
-			;
-		};
-
-		lgright: lgright {
-			label = "lgright";
-            compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-				= <&macro_press &kp LWIN>
-				, <&macro_tap &kp RIGHT>
-				, <&macro_release &kp LWIN>
-			;
-		};
-
-		lgup: lgup {
-			label = "lgup";
-            compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-				= <&macro_press &kp LWIN>
-				, <&macro_tap &kp UP>
-				, <&macro_release &kp LWIN>
-			;
-		};
-
-		lgdown: lgdown {
-			label = "lgdown";
-            compatible = "zmk,behavior-macro";
-			#binding-cells = <0>;
-			bindings
-				= <&macro_press &kp LWIN>
-				, <&macro_tap &kp DOWN>
-				, <&macro_release &kp LWIN>
-			;
-		};
-
-    };
-};
+/*
+ */ {
+ *    macros {
+ *        lgleft: lgleft {
+ *			label = "lgleft";
+ *            compatible = "zmk,behavior-macro";
+ *			#binding-cells = <0>;
+ *			bindings
+ *				= <&macro_press &kp LWIN>
+ *				, <&macro_tap &kp LEFT>
+ *				, <&macro_release &kp LWIN>
+ *			;
+ *		};
+ *
+ *		lgright: lgright {
+ *			label = "lgright";
+ *            compatible = "zmk,behavior-macro";
+ *			#binding-cells = <0>;
+ *			bindings
+ *				= <&macro_press &kp LWIN>
+ *				, <&macro_tap &kp RIGHT>
+ *				, <&macro_release &kp LWIN>
+ *			;
+ *		};
+ *
+ *		lgup: lgup {
+ *			label = "lgup";
+ *            compatible = "zmk,behavior-macro";
+ *			#binding-cells = <0>;
+ *			bindings
+ *				= <&macro_press &kp LWIN>
+ *				, <&macro_tap &kp UP>
+ *				, <&macro_release &kp LWIN>
+ *			;
+ *		};
+ *
+ *		lgdown: lgdown {
+ *			label = "lgdown";
+ *            compatible = "zmk,behavior-macro";
+ *			#binding-cells = <0>;
+ *			bindings
+ *				= <&macro_press &kp LWIN>
+ *				, <&macro_tap &kp DOWN>
+ *				, <&macro_release &kp LWIN>
+ *			;
+ *		};
+ *    };
+ *};
+ */
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -68,14 +69,14 @@
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
 // | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
 // |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
-// |  CTL  |  WIN  |  ALT  |            SPACE              |  ALT  |  WIN  |  MO(1) |  CTL  |
+// |  CTL  |  WIN  |  ALT  |  MO(2)  |    SPACE    |  BAR  |  ALT  |  WIN  |  MO(1) |  CTL  |
 // ------------------------------------------------------------------------------------------
             bindings = <
     &gresc  &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQUAL  &kp BSPC
     &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp LBKT  &kp RBKT  &kp BSLH
     &kp CLCK  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT           &kp RET
     &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH           &kp RSHFT
-    &kp LCTRL &kp LGUI &kp LALT             &kp SPACE                     &kp RALT  &kp RGUI  &mo 1   &kp RCTRL
+    &kp LCTRL &kp LGUI &kp LALT  &mo 1      &kp SPACE      &kp SPACE      &kp RALT  &kp RGUI  &mo 1   &kp RCTRL
             >;
         };
     };
