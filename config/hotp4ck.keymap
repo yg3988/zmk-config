@@ -44,7 +44,7 @@
 //            &kp A  &kp S  &kp D  &kp F  &kp G  &kp DEL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN   &kp RET
 //  &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH        &kp RSHFT
 //  &kp LCTRL &kp LGUI &kp LALT  &mo 1      &kp SPACE      &kp SPACE      &kp RALT  &kp RGUI  &mo 1   &kp RCTRL
-            >;
-        };
+//            >;
+//        };
     };
 };
