@@ -27,7 +27,7 @@
 		blue_led: led_0 {
 			gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
 			label = "Blue LED";
-		}
+		};
 	};
 
 	default_transform: keymap_transform_0 {
