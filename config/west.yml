@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/yg3988
   projects:
     - name: zmk
-      remote: hotp4ck
-      revision: sensor-driver-max17048
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config

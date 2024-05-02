@@ -115,9 +115,7 @@
     clock-frequency = <100000>;
 
     fuelgauge:max17048@36 {
-        status = "okay";
     	compatible = "maxim,max17048";
-    	label = "BATTERY";
     	reg = <0x36>;
     };
 };
