@@ -36,14 +36,14 @@
 
        lower_layer {
 //------------------------------------------------------------------------------------------
-//| ESC |     |     |     |     |     |     | INS | DEL |     |     |     |     |   BKSP   |
+//| grave |     |     |     |     |     |     | INS | DEL |     |     |     |     |   BKSP   |
 //|  TAB  |     |     |     |     |     |     | HOME |  UP  | END | PG_U |     |     |     |
 //|       |     |     |     |     |     |     | LEFT | DOWN | RIGHT | PG_D |     |         |
 //|  SHIFT  |     |     |     |     |     |     |     |     |     |     |                  |
 //|  CRL  |  WIN  |  ALT  |      |    SPACE    |   BAR   | BTCLR | BT  0 | BT  1 | BT  2 |
 //------------------------------------------------------------------------------------------
           bindings = <
-    &gresc  &trans &trans &trans &trans &trans &trans &kp INS &kp DEL &kp F9 &kp F10 &kp F11 &kp F12  &trans
+    &kp GRAVE  &trans &trans &trans &trans &trans &trans &kp INS &kp DEL &kp F9 &kp F10 &kp F11 &kp F12  &trans
     &kp TAB  &trans &trans &trans &trans &trans &trans &kp HOME  &kp UP  &kp END  &kp PG_UP &trans &trans &trans 
     &trans &trans &trans &trans &trans &trans &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &trans &trans 
     &kp LSHFT &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
