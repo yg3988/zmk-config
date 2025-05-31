@@ -14,3 +14,5 @@
 ---
 include:
   - board: hotp4ck_c
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
