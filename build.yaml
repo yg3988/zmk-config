@@ -13,4 +13,4 @@
 #
 ---
 include:
-  - board: hotp4ck
+  - board: hotp4ck_c
