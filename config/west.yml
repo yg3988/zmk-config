@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: hotp4ck
-      url-base: https://github.com/yg3988
   projects:
     - name: zmk
       remote: zmkfirmware

@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_HOTP4CK
+if BOARD_HOTP4CK_C
 
 config ZMK_KEYBOARD_NAME
-	default "HOTP4CK"
+	default "hotp4ck_c"
 
 if USB
 
@@ -31,4 +31,4 @@ config I2C
 config ZMK_MAX17048
 	default y
 
-endif # BOARD_HOTP4CK
+endif # BOARD_HOTP4CK_C

@@ -1,5 +1,5 @@
-identifier: hotp4ck
-name: hotp4ck
+identifier: hotp4ck_c
+name: hotp4ck_c
 type: mcu
 arch: arm
 toolchain:
